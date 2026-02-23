@@ -17,7 +17,7 @@
         <div>
           <label class="block text-sm font-medium text-gray-700 mb-2">Mật khẩu</label>
           <input ref="passwordInput" v-model="password" type="password" required class="input-field"
-            placeholder="Nhập mật khẩu của bạn" autocomplete="current-password" inputmode="latin" />
+            placeholder="Nhập mật khẩu của bạn" autocomplete="current-password" inputmode="text" />
         </div>
 
         <div class="flex items-center justify-between">

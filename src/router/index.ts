@@ -32,7 +32,13 @@ const router = createRouter({
           path: "medicines",
           name: "Medicines",
           component: () => import("@/views/MedicinesView.vue"),
-          meta: { allowedRoles: [UserRole.ADMIN, UserRole.INVENTORY_STAFF, UserRole.SALES_STAFF] },
+          meta: {
+            allowedRoles: [
+              UserRole.ADMIN,
+              UserRole.INVENTORY_STAFF,
+              UserRole.SALES_STAFF,
+            ],
+          },
         },
         {
           path: "categories",
@@ -94,7 +100,7 @@ const router = createRouter({
 });
 
 // Navigation guards
-router.beforeEach((to, from, next) => {
+router.beforeEach((to, _from, next) => {
   const authStore = useAuthStore();
 
   // Check if user needs to be authenticated

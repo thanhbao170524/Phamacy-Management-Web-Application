@@ -186,8 +186,6 @@ const selectedCategory = ref<Category | null>(null);
 const categoryMedicines = ref<any[]>([]);
 const loadingMedicines = ref(false);
 
-let searchTimeout: ReturnType<typeof setTimeout> | null = null;
-
 async function fetchCategories() {
   loading.value = true;
   try {

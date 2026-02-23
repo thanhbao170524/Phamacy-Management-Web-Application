@@ -45,7 +45,7 @@
         </thead>
         <tbody>
           <tr v-for="(item, index) in order.items" :key="item.id" class="border-b border-gray-200">
-            <td class="py-2 px-2 text-gray-600">{{ index + 1 }}</td>
+            <td class="py-2 px-2 text-gray-600">{{ (index as number) + 1 }}</td>
             <td class="py-2 px-2 font-medium text-gray-800">{{ item.medicine_name }}</td>
             <td class="py-2 px-2 text-center text-gray-600">{{ item.quantity }}</td>
             <td class="py-2 px-2 text-right text-gray-600">{{ formatCurrency(item.price) }}</td>

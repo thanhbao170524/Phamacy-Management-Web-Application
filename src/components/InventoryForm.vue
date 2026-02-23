@@ -101,7 +101,7 @@
 </template>
 
 <script setup lang="ts">
-import { ref, computed, onMounted } from "vue";
+import { ref, onMounted } from "vue";
 import type { Medicine } from "@/types";
 import api from "@/services/api";
 import { useAuthStore } from "@/stores/auth";

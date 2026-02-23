@@ -103,7 +103,7 @@ const emit = defineEmits<{
   cancel: [];
 }>();
 
-const { success, error } = useToast();
+const { error } = useToast();
 const loading = ref(false);
 const isEdit = ref(false);
 
